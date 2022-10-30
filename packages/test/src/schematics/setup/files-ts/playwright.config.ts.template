@@ -4,6 +4,8 @@ import {fileURLToPath} from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+{ name: 'chromium', use: { ...devices['Desktop Chrome'], }, },
+
 const config: PlaywrightTestConfig = {
   use: {
     channel: 'chrome',

@@ -43,6 +43,9 @@ The package will be built in `<package folder>/dist`, e.g. `packages/test/dist`.
 
 To run the integration tests, run
 
+$ yarn add @playwright/test # or just install your existing deps (that already include @playwright/test)
+$ yarn playwright install
+
 ```bash
 yarn test
 # or

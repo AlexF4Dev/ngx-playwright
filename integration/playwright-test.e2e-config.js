@@ -10,10 +10,16 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
  * @type {import('@ngx-playwright/test').PlaywrightTestConfig}
  */
 const config = {
-  use: {
-    channel: 'chrome',
-    headless: true,
-  },
+  // use: {
+  //   channel: 'chrome',
+  //   headless: true,
+  // },
+  projects: [
+    {
+      name: 'chromium',
+      use: {browserName: 'chromium'},
+    },
+  ],
 
   testDir: join(__dirname, 'e2e/test-specs'),
   testMatch: '**/*.e2e-spec.js',
